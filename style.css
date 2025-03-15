@@ -1,0 +1,120 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.loader {
+  display: block;
+  margin: 170px auto;
+  width: 300px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  cursor: pointer;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 220px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+/* Asosiy mahsulot rasmi */
+#main-image {
+    width: 300px; /* Maksimal kenglik */
+    height: auto; /* Proporsiyani saqlash */
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px; /* Yaxshi ko'rinishi uchun */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Galereya ichidagi kichik rasmlar */
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery .thumb {
+    width: 80px; /* Kichik rasmlar uchun */
+    height: 80px;
+    object-fit: cover; /* Rasmni to'g'ri joylashtirish */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.gallery .thumb:hover {
+    transform: scale(1.1);
+}
+
+.products-img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.reting {
+  font-weight: bold;
+  color: darkcyan;
+  margin-bottom: 5px;
+}
+
+.pracing {
+  font-size: 16px;
+  color: #666;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+button:hover {
+  background: #27ae60;
+}
