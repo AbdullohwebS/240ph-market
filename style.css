@@ -5,7 +5,22 @@ body {
   margin: 0;
   padding: 20px;
 }
+body {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
 
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode h2 {
+  color: #f8f8f8;
+}
 h2 {
   color: #333;
   margin-bottom: 20px;

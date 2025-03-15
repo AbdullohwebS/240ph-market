@@ -1,4 +1,25 @@
 const currentPage = window.location.pathname;
+const button = document.getElementById("toggleMode");
+const body = document.body;
+
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+    button.textContent = "Light Mode";
+}
+
+button.addEventListener("click", function () {
+    body.classList.toggle("dark-mode");
+
+    if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark"); 
+        button.textContent = "Light Mode";
+    } else {
+        localStorage.setItem("theme", "light");
+        button.textContent = "Dark Mode";
+    }
+});
+
+
 
 if (currentPage.includes("index.html") || currentPage === "/") {
   console.log("Sahifa yuklandi: index.html");
